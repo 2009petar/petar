@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+<meta charset="UTF-8">
+<title>Kamen Papir Makaze</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Kamen · Papir · Makaze</h1>
+    <div class="podnaslov">Igra za dva igrača — prvi do 3 pobede</div>
+
+    <div class="status" id="statusEl">Igrač 1, izaberi svoj potez</div>
+
+    <div class="tabla">
+        <div class="igrac" id="igrac1Box">
+            <div class="igrac-ime">Igrač 1</div>
+            <div class="znak" id="znak1">?</div>
+            <div class="skor" id="skor1">0</div>
+        </div>
+
+        <div class="vs">VS</div>
+
+        <div class="igrac" id="igrac2Box">
+            <div class="igrac-ime">Igrač 2</div>
+            <div class="znak" id="znak2">?</div>
+            <div class="skor" id="skor2">0</div>
+        </div>
+    </div>
+
+    <div class="poruka" id="poruka"></div>
+
+    <div class="izbori">
+        <button class="izbor-dugme" data-izbor="kamen" onclick="odaberi('kamen')">✊</button>
+        <button class="izbor-dugme" data-izbor="papir" onclick="odaberi('papir')">✋</button>
+        <button class="izbor-dugme" data-izbor="makaze" onclick="odaberi('makaze')">✌️</button>
+    </div>
+
+    <button class="reset-dugme" onclick="resetujIgru()">Resetuj igru</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

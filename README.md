@@ -1,0 +1,2 @@
+# petar
+papir,kamen,makaze
